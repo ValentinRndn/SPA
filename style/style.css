@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap'); /**On importe une police d'écriture**/
+
+/**On applique la taille de la box et la font sur tous les élements**/
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+/**On aligne et on applique un écart verse le bas pour tous les titre h1**/
+h1 {
+    text-align: center;
+    padding-bottom: 20px
+
+}
+
+/**On donne une taille, un placement au body. On ajoute un background en dégradé**/
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #7DE671, #DF3F3F);
+}
+
+/**Mise en page des élements de navigation **/
+.navigation {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/**On enlève le style des liens au élements de navigation**/
+.navigation a {
+    text-decoration: none;
+    color: black;
+}
+/**On ajoute un style vert quand on passe la souris sur l'élément de navigation**/
+.container .navigation a:hover {
+    color: #7DE671;
+}
+
+/**On applique une taille, une couleur, ect au container principal**/
+.container{
+    max-width: 1000px;
+    width: 100%;
+    background-color: #fff;
+    padding: 50px 50px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+
+/**On crée un style au formulaire **/
+.user-details .input-box input{
+    height: 50px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+}
+
+}

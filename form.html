@@ -1,0 +1,64 @@
+<?php
+
+$corps =<<<EOT
+  <form method="post" action="index.php?action={$cible}&idP={$idP}" name="form_user" >
+    <h1>Enregistrez-vous et votre animal</h1>
+    <div class="user-details">
+    <h4><span class="details">Nom</span></h4>
+    <div class="input-box">
+        <input type="text" name="nom" value="{$nom}" placeholder="Entrez votre nom">
+        <span class="w3-text-red">{$erreur["nom"]}</span>
+    </div>
+
+    <div class="input-box">
+        <h4><span class="details">Prénom</span></h4>
+        <input type="text" name="prenom" value="{$prenom}" placeholder="Entrez votre prénom">
+        <span class="w3-text-red">{$erreur["prenom"]}</span>
+    </div>
+
+    <div class="input-box">
+        <h4><span class="details">Date</span></h4>
+        <input type="text" name="dateN" placeholder="aaaa-mm-jj" value="{$dateN}">
+        <span class="w3-text-red">{$erreur["dateN"]}</span>
+    </div>
+
+    <div class="input-box">
+        <h4><span class="details">Téléphone</span></h4>
+        <input type="text" name="telephone" placeholder="xx xx xx xx xx" value="{$telephone}">
+        <span class="w3-text-red">{$erreur["telephone"]}</span>
+    </div>
+
+    <div class="input-box">
+        <h4><span class="details">Adresse</span></h4>
+        <input type="text" name="adresse" placeholder="Entrez votre adresse" value="{$adresse}">
+        <span class="w3-text-red">{$erreur["adresse"]}</span>
+    </div>
+
+    <div class="input-box">
+        <h4><span class="details">Nom de l'animal</span></h4>
+        <input type="text" name="nom_animal" value="{$nom_animal}" placeholder="Entrez le nom de votre animal">
+        <span class="w3-text-red">{$erreur["adresse"]}</span>
+    </div>
+
+    <div class="input-box">
+        <h4><span class="details">Type de l'animal</span></h4>
+        <input type="text" name="type_animal" value="{$type_animal}" placeholder="Entrez le type de votre animal">
+        <span class="w3-text-red">{$erreur["adresse"]}</span>
+    </div>
+
+    <div class="input-box">
+        <h4><span class="details">Race de l'animal</span></h4>
+        <input type="text" name="race_animal" value="{$race_animal}" placeholder="Entrez la race de votre animal">
+        <span class="w3-text-red">{$erreur["adresse"]}</span>
+    </div>
+
+
+    <div class="button">
+<input type="submit" name="user_valider" value="Valider">
+    </div>
+</div>
+</form>
+
+EOT;
+$zonePrincipale=$corps ;
+?>
